@@ -120,7 +120,7 @@ int hitungNilai2({mapel1, mapel2}) {
 }
 
 //void
-Void hitungNilai3(mapel1, mapel2) {
+void hitungNilai3(mapel1, mapel2) {
   var nilaiakhir = mapel1 + mapel2;
   print(nilaiakhir);
 }

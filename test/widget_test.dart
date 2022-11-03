@@ -1,14 +1,4 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-
-import 'package:flutter_pertama/main.dart';
+import 'dart:ffi';
 
 void main() {
   //tipe data dan variable
@@ -90,4 +80,49 @@ void main() {
 
   print("-------------");
   nilai >= 80 ? print("A") : print("tidak A");
+  //function
+  print("Function");
+
+  hitungNilai();
+  hitungNilai1(75, 90);
+  var p = hitungNilai1(2, 50);
+  print(p);
+  var n = hitungNilai2(mapel1: 50, mapel2: 2);
+  print(n);
+  var o = hitungNilai3(79, 100);
+}
+
+//funtion
+hitungNilai() {
+  print("hitung nilai");
+}
+
+//positional argument
+int hitungNilai1(mapel1, mapel2, [mapel3]) {
+  var nilaiakhir;
+  if (mapel3 != null) {
+    nilaiakhir = mapel1 / mapel2 + mapel3;
+  } else {
+    nilaiakhir = mapel1 / mapel2;
+  }
+
+  return nilaiakhir;
+}
+
+//name argument
+int hitungNilai2({mapel1, mapel2}) {
+  var nilaiakhir;
+  if (mapel2 != null) {
+    nilaiakhir = mapel1 / mapel2;
+  } else {
+    nilaiakhir = mapel1;
+  }
+
+  return nilaiakhir;
+}
+
+//void
+Void hitungNilai3(mapel1, mapel2) {
+  var nilaiakhir = mapel1 + mapel2;
+  print(nilaiakhir);
 }

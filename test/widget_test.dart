@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 void main() {
   //tipe data dan variable
   var mahasiswa = "Sean";

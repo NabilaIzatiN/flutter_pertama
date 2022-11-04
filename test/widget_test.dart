@@ -88,6 +88,16 @@ void main() {
   var n = hitungNilai2(mapel1: 50, mapel2: 2);
   print(n);
   var o = hitungNilai3(79, 100);
+
+  //final keyword => imutable/ tidak bisa dirubah
+  //const final
+  //const
+  //const String mahasiswa = "Tyo";
+  //final
+  final String mahasiswafk;
+  mahasiswafk = "Tirta";
+
+  print(mahasiswafk);
 }
 
 //funtion

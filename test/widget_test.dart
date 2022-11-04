@@ -98,6 +98,18 @@ void main() {
   mahasiswafk = "Tirta";
 
   print(mahasiswafk);
+
+  //null safety
+  //? ! late
+  //? digunakan dia boleh null
+  // String? jurusan;
+  // untuk di isi nanti
+  late String jurusanns;
+
+  jurusanns = "Teknik Informatika";
+  //jurusanns = "TI";
+  //memaksa untuk dijalankan / yakin ada datanya
+  print(jurusanns.length);
 }
 
 //funtion
